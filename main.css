@@ -1,0 +1,377 @@
+*{
+    padding:0px;
+    box-sizing: border-box;
+    margin:0px;
+    color:rgb(3, 80, 221);
+    background-color: rgb(254 221 0);
+}
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+}
+.img1{
+    width: 90%;
+    height: 60%;
+    background-image:url(./2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2{
+    width: 90%;
+    height: 60%;
+    background-image:url(./1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;   
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+}
+.flower {
+    display: grid;
+    font-size: 0.1em;
+    height: 110em;
+    place-items: center;
+}
+.x {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    border-radius: 12px;
+    animation: ease 2s alternate infinite;
+}
+.x:nth-of-type(1) {
+    box-shadow: 0 0 0.5em rgba(255,255,255,0.1);
+    border-radius: 1.2em;
+    width: 4em;
+    height: 4em;
+    background: hsl(208,100%,30%);
+    animation-name: x-1;
+    animation-delay: 80ms;
+    transform: rotate(36deg);
+    z-index: 99;
+}
+@keyframes x-1 {
+    to {
+        transform: rotate(36deg) scale(0.6);
+    }
+}
+.x:nth-of-type(2) {
+    box-shadow: 0 0 1em rgba(255,255,255,0.1);
+    border-radius: 1.4em;
+    width: 8em;
+    height: 8em;
+    background: hsl(208,100%,33%);
+    animation-name: x-2;
+    animation-delay: 160ms;
+    transform: rotate(72deg);
+    z-index: 98;
+}
+@keyframes x-2 {
+    to {
+        transform: rotate(72deg) scale(0.6);
+    }
+}
+.x:nth-of-type(3) {
+    box-shadow: 0 0 1.5em rgba(255,255,255,0.1);
+    border-radius: 1.6em;
+    width: 12em;
+    height: 12em;
+    background: hsl(208,100%,36%);
+    animation-name: x-3;
+    animation-delay: 240ms;
+    transform: rotate(108deg);
+    z-index: 97;
+}
+@keyframes x-3 {
+    to {
+        transform: rotate(108deg) scale(0.6);
+    }
+}
+.x:nth-of-type(4) {
+    box-shadow: 0 0 2em rgba(255,255,255,0.1);
+    border-radius: 1.8em;
+    width: 16em;
+    height: 16em;
+    background: hsl(208,100%,39%);
+    animation-name: x-4;
+    animation-delay: 320ms;
+    transform: rotate(144deg);
+    z-index: 96;
+}
+@keyframes x-4 {
+    to {
+        transform: rotate(144deg) scale(0.6);
+    }
+}
+.x:nth-of-type(5) {
+    box-shadow: 0 0 2.5em rgba(255,255,255,0.1);
+    border-radius: 2em;
+    width: 20em;
+    height: 20em;
+    background: hsl(208,100%,42%);
+    animation-name: x-5;
+    animation-delay: 400ms;
+    transform: rotate(180deg);
+    z-index: 95;
+}
+@keyframes x-5 {
+    to {
+        transform: rotate(180deg) scale(0.6);
+    }
+}
+.x:nth-of-type(6) {
+    box-shadow: 0 0 3em rgba(255,255,255,0.1);
+    border-radius: 2.2em;
+    width: 24em;
+    height: 24em;
+    background: hsl(208,100%,45%);
+    animation-name: x-6;
+    animation-delay: 480ms;
+    transform: rotate(216deg);
+    z-index: 94;
+}
+@keyframes x-6 {
+    to {
+        transform: rotate(216deg) scale(0.6);
+    }
+}
+.x:nth-of-type(7) {
+    box-shadow: 0 0 3.5em rgba(255,255,255,0.1);
+    border-radius: 2.4em;
+    width: 28em;
+    height: 28em;
+    background: hsl(208,100%,48%);
+    animation-name: x-7;
+    animation-delay: 560ms;
+    transform: rotate(252deg);
+    z-index: 93;
+}
+@keyframes x-7 {
+    to {
+        transform: rotate(252deg) scale(0.6);
+    }
+}
+.x:nth-of-type(8) {
+    box-shadow: 0 0 4em rgba(255,255,255,0.1);
+    border-radius: 2.6em;
+    width: 32em;
+    height: 32em;
+    background: hsl(208,100%,51%);
+    animation-name: x-8;
+    animation-delay: 640ms;
+    transform: rotate(288deg);
+    z-index: 92;
+}
+@keyframes x-8 {
+    to {
+        transform: rotate(288deg) scale(0.6);
+    }
+}
+.x:nth-of-type(9) {
+    box-shadow: 0 0 4.5em rgba(255,255,255,0.1);
+    border-radius: 2.8em;
+    width: 36em;
+    height: 36em;
+    background: hsl(208,100%,54%);
+    animation-name: x-9;
+    animation-delay: 720ms;
+    transform: rotate(324deg);
+    z-index: 91;
+}
+@keyframes x-9 {
+    to {
+        transform: rotate(324deg) scale(0.6);
+    }
+}
+.x:nth-of-type(10) {
+    box-shadow: 0 0 5em rgba(255,255,255,0.1);
+    border-radius: 3em;
+    width: 40em;
+    height: 40em;
+    background: hsl(208,100%,57%);
+    animation-name: x-10;
+    animation-delay: 800ms;
+    transform: rotate(360deg);
+    z-index: 90;
+}
+@keyframes x-10 {
+    to {
+        transform: rotate(360deg) scale(0.6);
+    }
+}
+.x:nth-of-type(11) {
+    box-shadow: 0 0 5.5em rgba(255,255,255,0.1);
+    border-radius: 3.2em;
+    width: 44em;
+    height: 44em;
+    background: hsl(208,100%,60%);
+    animation-name: x-11;
+    animation-delay: 880ms;
+    transform: rotate(396deg);
+    z-index: 89;
+}
+@keyframes x-11 {
+    to {
+        transform: rotate(396deg) scale(0.6);
+    }
+}
+.x:nth-of-type(12) {
+    box-shadow: 0 0 6em rgba(255,255,255,0.1);
+    border-radius: 3.4em;
+    width: 48em;
+    height: 48em;
+    background: hsl(208,100%,63%);
+    animation-name: x-12;
+    animation-delay: 960ms;
+    transform: rotate(432deg);
+    z-index: 88;
+}
+@keyframes x-12 {
+    to {
+        transform: rotate(432deg) scale(0.6);
+    }
+}
+.x:nth-of-type(13) {
+    box-shadow: 0 0 6.5em rgba(255,255,255,0.1);
+    border-radius: 3.6em;
+    width: 52em;
+    height: 52em;
+    background: hsl(208,100%,66%);
+    animation-name: x-13;
+    animation-delay: 1040ms;
+    transform: rotate(468deg);
+    z-index: 87;
+}
+@keyframes x-13 {
+    to {
+        transform: rotate(468deg) scale(0.6);
+    }
+}
+.x:nth-of-type(14) {
+    box-shadow: 0 0 7em rgba(255,255,255,0.1);
+    border-radius: 3.8em;
+    width: 56em;
+    height: 56em;
+    background: hsl(208,100%,69%);
+    animation-name: x-14;
+    animation-delay: 1120ms;
+    transform: rotate(504deg);
+    z-index: 86;
+}
+@keyframes x-14 {
+    to {
+        transform: rotate(504deg) scale(0.6);
+    }
+}
+.x:nth-of-type(15) {
+    box-shadow: 0 0 7.5em rgba(255,255,255,0.1);
+    border-radius: 4em;
+    width: 60em;
+    height: 60em;
+    background: hsl(208,100%,72%);
+    animation-name: x-15;
+    animation-delay: 1200ms;
+    transform: rotate(540deg);
+    z-index: 85;
+}
+@keyframes x-15 {
+    to {
+        transform: rotate(540deg) scale(0.6);
+    }
+}
+.x:nth-of-type(16) {
+    box-shadow: 0 0 8em rgba(255,255,255,0.1);
+    border-radius: 4.2em;
+    width: 64em;
+    height: 64em;
+    background: hsl(208,100%,75%);
+    animation-name: x-16;
+    animation-delay: 1280ms;
+    transform: rotate(576deg);
+    z-index: 84;
+}
+@keyframes x-16 {
+    to {
+        transform: rotate(576deg) scale(0.6);
+    }
+}
+.x:nth-of-type(17) {
+    box-shadow: 0 0 8.5em rgba(255,255,255,0.1);
+    border-radius: 4.4em;
+    width: 68em;
+    height: 68em;
+    background: hsl(208,100%,78%);
+    animation-name: x-17;
+    animation-delay: 1360ms;
+    transform: rotate(612deg);
+    z-index: 83;
+}
+@keyframes x-17 {
+    to {
+        transform: rotate(612deg) scale(0.6);
+    }
+}
+.x:nth-of-type(18) {
+    box-shadow: 0 0 9em rgba(255,255,255,0.1);
+    border-radius: 4.6em;
+    width: 72em;
+    height: 72em;
+    background: hsl(208,100%,81%);
+    animation-name: x-18;
+    animation-delay: 1440ms;
+    transform: rotate(648deg);
+    z-index: 82;
+}
+@keyframes x-18 {
+    to {
+        transform: rotate(648deg) scale(0.6);
+    }
+}
+.x:nth-of-type(19) {
+    box-shadow: 0 0 9.5em rgba(255,255,255,0.1);
+    border-radius: 4.8em;
+    width: 76em;
+    height: 76em;
+    background: hsl(208,100%,84%);
+    animation-name: x-19;
+    animation-delay: 1520ms;
+    transform: rotate(684deg);
+    z-index: 81;
+}
+@keyframes x-19 {
+    to {
+        transform: rotate(684deg) scale(0.6);
+    }
+}
+.x:nth-of-type(20) {
+    box-shadow: 0 0 10em rgba(255,255,255,0.1);
+    border-radius: 5em;
+    width: 80em;
+    height: 80em;
+    background: hsl(208,100%,87%);
+    animation-name: x-20;
+    animation-delay: 1600ms;
+    transform: rotate(720deg);
+    z-index: 80;
+}
+@keyframes x-20 {
+    to {
+        transform: rotate(720deg) scale(0.6);
+    }
+}
+
