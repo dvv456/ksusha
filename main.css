@@ -11,7 +11,26 @@
     scroll-snap-type: y mandatory;
     position: relative;
 }
-
+.img1{
+    width: 90%;
+    height: 60%;
+    background-image:url(./2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2{
+    width: 90%;
+    height: 60%;
+    background-image:url(./1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
 .section{
     height: 100vh;
     scroll-snap-align: start;
